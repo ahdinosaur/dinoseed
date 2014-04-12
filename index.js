@@ -5,7 +5,7 @@ var templates = require('metalsmith-templates');
 
 var usage = "usage: dinoseed <directory> <seed name>";
 
-var dir = process.argv[3];
+var dir = process.argv[2];
 if (!dir) {
   console.log("directory not given!");
   console.log(usage);
