@@ -5,7 +5,11 @@
   },
   "templates": {
     "engine": "handlebars",
-    "pattern": "(README.md|package.json|docpad.js)",
+    "pattern": [
+      "README.md",
+      "package.json",
+      "docpad.js"
+    ],
     "inPlace": true
   }
 }

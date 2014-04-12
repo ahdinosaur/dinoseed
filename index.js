@@ -1,4 +1,5 @@
 var path = require('path');
+var fs = require('fs');
 var metalsmith = require('metalsmith');
 var prompt = require('metalsmith-prompt');
 var templates = require('metalsmith-templates');
@@ -41,4 +42,7 @@ metalsmith(__dirname)
   .use(templates(seed.templates))
   .build(function (err) {
     if (err) { throw err; }
+    
+    var dotgitPath = path.join(cwd, dir, ".git");
+    fs.unlinkSync(dotgitPath);
   });
