@@ -1,0 +1,11 @@
+{
+  "prompt": {
+    "user": "string",
+    "project": "string"
+  },
+  "template": {
+    "engine": "handlebars",
+    "pattern": "(README.md|package.json|docpad.js)",
+    "inPlace": true
+  }
+}

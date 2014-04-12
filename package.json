@@ -1,0 +1,27 @@
+{
+  "name": "dinoseed",
+  "version": "0.1.0",
+  "description": "seed a dinosaur project",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "~1.2.2",
+    "metalsmith": "~0.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ahdinosaur/dinoseed.git"
+  },
+  "keywords": [
+    "seed"
+  ],
+  "author": "ahdinosaur",
+  "license": "AGPLv3",
+  "bugs": {
+    "url": "https://github.com/ahdinosaur/dinoseed/issues"
+  },
+  "homepage": "https://github.com/ahdinosaur/dinoseed"
+}
