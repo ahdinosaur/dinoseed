@@ -1,3 +1,4 @@
+var path = require('path');
 var metalsmith = require('metalsmith');
 var prompt = require('metalsmith-prompt');
 var templates = require('metalsmith-templates');
@@ -12,7 +13,7 @@ if (!seedName) {
   process.exit(1);
 }
 
-var seedPath = __dirname + "/" + seedName;
+var seedPath = "./" + seedName;
 var seed;
 
 try {
@@ -24,10 +25,13 @@ try {
 }
 
 var cwd = process.cwd();
+var cwdRelative = path.relative(__dirname, cwd);
 
 metalsmith(__dirname)
   .source(seedPath)
-  .destination(cwd)
+  .destination(cwdRelative)
   .use(prompt(seed.prompt))
-  .use(templates(seed.template))
-  .build()
+  .use(templates(seed.templates))
+  .build(function (err) {
+    if (err) { throw err; }
+  });

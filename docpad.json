@@ -3,7 +3,7 @@
     "user": "string",
     "project": "string"
   },
-  "template": {
+  "templates": {
     "engine": "handlebars",
     "pattern": "(README.md|package.json|docpad.js)",
     "inPlace": true
