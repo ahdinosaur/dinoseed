@@ -4,3 +4,6 @@
 [submodule "client"]
 	path = client
 	url = git://github.com/ahdinosaur/init.client
+[submodule "beefy"]
+	path = beefy
+	url = git://github.com/ahdinosaur/init.beefy

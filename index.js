@@ -4,16 +4,19 @@ var metalsmith = require('metalsmith');
 var prompt = require('metalsmith-prompt');
 var templates = require('metalsmith-templates');
 
-var usage = "usage: dinoseed <directory> <seed name>";
+var usage = require('yargs')
+  .usage("usage: $0 -d <directory> -s <seed name>")
+  .demand(['d', 's'])
+  .argv;
 
-var dir = process.argv[2];
+var dir = argv.d;
 if (!dir) {
   console.log("directory not given!");
   console.log(usage);
   process.exit(1);
 }
 
-var seedName = process.argv[3];
+var seedName = argv.s;
 if (!seedName) {
   console.log("seed name not given!");
   console.log(usage);
