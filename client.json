@@ -1,0 +1,15 @@
+{
+  "prompt": {
+    "user": "string",
+    "project": "string"
+  },
+  "templates": {
+    "engine": "handlebars",
+    "pattern": [
+      "README.md",
+      "package.json",
+      "static/index.html"
+    ],
+    "inPlace": true
+  }
+}

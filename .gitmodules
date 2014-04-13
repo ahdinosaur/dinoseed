@@ -1,3 +1,6 @@
 [submodule "docpad"]
 	path = docpad
 	url = git://github.com/ahdinosaur/init.docpad.git
+[submodule "client"]
+	path = client
+	url = git://github.com/ahdinosaur/init.client
