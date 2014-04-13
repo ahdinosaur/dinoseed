@@ -4,7 +4,7 @@ var metalsmith = require('metalsmith');
 var prompt = require('metalsmith-prompt');
 var templates = require('metalsmith-templates');
 
-var usage = require('yargs')
+var argv = require('yargs')
   .usage("usage: $0 -d <directory> -s <seed name>")
   .demand(['d', 's'])
   .argv;
